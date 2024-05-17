@@ -25,3 +25,37 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# Flutter/Dart/Pub related
+**/doc/api/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache
+.pub
+build/
+.flutter/
+
+# IntelliJ related
+.idea/
+*.iml
+
+# Visual Studio Code related
+.vscode/
+
+# Misc
+*.class
+*.log
+*.pyc
+*.pyo
+*.swp
+*.lock
+*.DS_Store
+*.dart_tool/
+*.lock
+*.log
+
+# Generated files
+gen/
+out/
+
