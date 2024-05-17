@@ -23,7 +23,7 @@ doc/api/
 *.js.deps
 *.js.map
 
-.flutter-plugins
+.flutter-plugins"
 .flutter-plugins-dependencies
 
 # Flutter/Dart/Pub related
