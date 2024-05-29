@@ -28,14 +28,14 @@ class _RegisterYearDropdownWidgetState
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? jsonStr = prefs.getString('registeryear');
     //print('jsonStr ${jsonStr}');
-    List<String> options;
+    List<String> options = [];
     if (jsonStr != null) {
       Map<String, dynamic> jsonData = jsonDecode(jsonStr);
       options = (jsonData["RECORD"] as List<dynamic>)
           .map((course) => "${course["year"]}")
           .toList();
       setState(() {
-        _options = options ?? [];
+        _options = options;
         _selectedOption = _options.isNotEmpty ? _options.first : "";
       });
     }
